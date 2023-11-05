@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="nav-bar">
+        <h1>Meeting Selection</h1>
+    </nav>
+
+    <div class="input-bar">
+        <input type="number" name="" id="rent" placeholder="Enter the rent per hour (in Rs.)" title="Rent per hour">
+        
+        <div class="time-grid">
+            <input type="time" name="start" id="start1" title="Starting Time">
+            <input type="time" name="end" id="end1" title="Ending Time">
+        </div>
+
+        <div class="btn-grp">
+            <button id="add-btn" title="Add new Meeting">Add Meetings</button>
+            <button id="calculate-btn" title="Schedule Meetings">Calculate</button>
+        </div>
+    </div>
+
+    <div class="result-bar">
+        
+    </div>
+
+    <div class="error-box" id="errorBox">
+        <span class="close-btn" id="closeErrorBtn">&times;</span>
+        <h2>There is an error :(</h2>
+        <p id="errorMsg"></p>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
