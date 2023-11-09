@@ -17,7 +17,7 @@ class MeetingScheduler:
             if start_time >= current_time:
                 meeting_duration = self.get_time_difference(start_time, end_time)
                 self.total_buzy_minutes += meeting_duration
-                meeting_rent = meeting_duration * self.rent / 60
+                meeting_rent = round(meeting_duration * self.rent / 60, 2)
                 self.total_profit += meeting_rent
                 self.selected_meetings.append({
                     'starting_time': start_time,
