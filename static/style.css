@@ -237,6 +237,11 @@
         grid-template-columns: auto;
     }
 
+    #back-splash-1, #back-splash-2 {
+        height: 20vw;
+        width: 20vw;
+    }
+
 
 
 }
