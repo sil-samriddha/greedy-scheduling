@@ -8,7 +8,7 @@ def display():
     return render_template ('index.html')
 
 @app.route('/schedule', methods=['POST'])
-def schedule_meetings():
+def schedule():
     data = request.get_json()
     rent = data.get('rent')
     meetings = data.get('meetings')
